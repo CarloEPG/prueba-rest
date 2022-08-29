@@ -1,0 +1,362 @@
+  :root {
+  --btn: #dc3545 ;
+  --btn-hover: #bb2d3b;
+  --negro: #212529;
+  --rojo: #dc3545;
+  --gris: #F7F7F7;
+}
+
+
+
+
+
+
+
+
+
+
+body .log span{
+  color:#dc3545;
+}
+
+
+
+  section {
+    position: relative;
+    padding: 100px 0;
+  }
+
+  .navbar-collapse {
+    margin-left: 8em;
+  }
+
+  @media screen and (max-width: 1170px) {
+    .navbar-collapse {
+      margin-left: inherit;
+    }
+  }
+
+  #header .navbar .container .navbar-nav .nav-item .nav-link:hover{
+    color: #dc3545;
+  }
+  #header .navbar .container .navbar-nav .nav-item .active{
+    color: #dc3545;
+  }
+  /*---------------------------------------
+  hero              
+  -----------------------------------------*/
+  #hero {
+    display: table;
+    width: 100%;
+    padding: 0;
+    background: url(../img/bg-image.jpg) no-repeat center center;
+    background-color: #e5e5e5;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    box-shadow: 10px 5px 5px black;
+  }
+
+  #hero .caption {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    height: 100%;
+    color: #fff;
+    padding: 4em 0 0 2em;
+  }
+
+  section .intro-text {
+    background-position: inherit;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-size: cover;
+    height: 640px;
+  }
+
+
+  /*---------------------------------------
+  nosotros         
+  -----------------------------------------*/
+  #nosotros {
+    padding-bottom: 0;
+  }
+
+  .nosotros-info {
+    padding: 0 6em 5em 0;
+  }
+
+  .nosotros-info .section-title {
+    padding-bottom: 20px;
+  }
+
+  .nosotros-img {
+    position: absolute;
+  }
+
+  .nosotros-img img, .team-thumb img {
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 1200px) {
+      .nosotros-info {
+      padding-right: 0;
+    }
+
+      .nosotros-img {
+      position: relative;
+    }
+  }
+
+  .nosotros-info {
+    padding: 0;
+  }
+
+  /*---------------------------------------
+  menu       
+  -----------------------------------------*/
+  .menu-item img {
+    width: 100%;
+    height: 300px;
+    transition: 0.5s;
+  }
+
+  .menu-item:hover img {
+    transform: scale(1.15);
+  }
+
+  #menu .menu-item {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    width: 102%;
+  }
+
+  .menu-item .menu-info {
+    position: absolute;
+    top: 60%;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    text-align: left;
+    padding: 25px 30px;
+    transition: 0.5s 0.2s;
+  }
+
+  .menu-info .menu-item {
+    float: left;
+  }
+
+
+  .menu-item .menu-info h3,
+  .menu-item .menu-info p{
+    transform: translateY(100%);
+    opacity: 0;
+    display: block;
+    transition: 0.5s 0.2s;
+    color: #ffffff;
+    z-index: 2;
+    position: relative;
+  }
+
+  .menu-item .menu-info h3 {
+    margin-top: 0;
+  }
+
+  .menu-item .menu-info p {
+    color: #d9d9d9;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+
+  .menu-item:hover .menu-info h3,
+  .menu-item:hover .menu-info p {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+  .menu-item:hover .menu-info {
+    background: rgba(0,0,0,0.8);
+  }
+
+  /*---------------------------------------
+  galeria       
+  -----------------------------------------*/
+  #galeria .galeria-o{
+    opacity: 0;
+    transition: opacity 0.5s linear 1s;
+  }
+
+   #galeria .galeria-o.imagen-cargada{
+    opacity: 1;
+   }
+
+  #galeria .galeria-item {
+    overflow: hidden;
+    border-right: 3px solid #454035;
+    border-bottom: 3px solid #454035;
+  }
+
+
+
+  /*---------------------------------------
+  contacto  
+  -----------------------------------------*/
+
+  #contacto{
+    background: #F7F7F7;
+  }
+  #contacto .info {
+    width: 100%;
+  }
+
+  #contacto .info i {
+    font-size: 20px;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #dc3545;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  #contacto .info h4 {
+    padding: 0 0 0 60px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  #contacto .info p {
+    padding: 0 0 0 60px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #bab3a6;
+  }
+
+  #contacto .info .hora, #contacto .info .email, #contacto .info .telefono {
+    margin-top: 40px;
+  }
+
+  #google-map iframe {
+    border: 0;
+    width: 100%;
+    height: 390px;
+  }
+
+  /*---------------------------------------
+  footer   
+  -----------------------------------------*/
+
+  #footer {
+    background: #212529;
+    padding: 0 0 30px 0;
+    color: #fff;
+    font-size: 14px;
+  }
+
+  #footer .social-links{
+    padding-top: 30px;
+    text-align: center;
+  }
+
+  #footer .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #212529;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+  }
+
+  #footer .social-links a:hover {
+    background: #dc3545;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  #footer .copy {
+    text-align: center;
+    padding-top: 30px;
+  }
+
+
+
+
+
+
+  /*---------------------------------------
+  menu-platos   
+  -----------------------------------------*/
+
+.menu-esp .menu-plato {
+  margin-top: 50px;
+}
+
+.menu-esp .menu-img {
+  width: 70px;
+  border-radius: 50%;
+  float: left;
+  border: 5px solid var(--rojo);
+}
+
+.menu-esp .menu-content {
+  margin-left: 85px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.menu-esp .menu-content p {
+  background: white;
+  padding-right: 10px;
+  position: relative;
+  z-index: 3;
+  font-weight: 700;
+  transition: 0.3s;
+
+}
+
+.menu-esp .menu-content::after {
+  content: "......................................................................"
+ "...................................................................."
+ "....................................................................";
+  position: absolute;
+  left: 20px;
+  right: 0;
+  top: -4px;
+  z-index: 1;
+  color: var(--rojo);
+}
+
+
+.menu-esp .menu-content span {
+  background: white;
+  position: relative;
+  z-index: 3;
+  padding: 0 10px;
+  font-weight: 600;
+}
+
+.menu-esp .menu-ingredients {
+  margin-left: 85px;
+  font-style: italic;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: var(--negro);
+}
